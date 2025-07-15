@@ -63,10 +63,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                 &kp T                                             &kp Y                  &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))      &kp SINGLE_QUOTE  &kp H                  &kp J  &kp K      &kp L    &kp SEMI
-&kp Z      &kp X         &kp C         &kp V                 &kp B        &kp MINUS          &kp EQUAL         &kp N                  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 TAB  &lt 1 SPACE  &kp RCTRL          &kp BACKSPACE     &mt RIGHT_SHIFT ENTER                             &lt 3 LS(SPACE)
+&kp Q               &kp W         &kp E         &kp R                 &kp T                                             &kp Y                  &kp U  &kp I      &kp O    &kp P
+&kp A               &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))      &kp SINGLE_QUOTE  &kp H                  &kp J  &kp K      &kp L    &kp SEMI
+&kp Z               &kp X         &kp C         &kp V                 &kp B        &kp MINUS          &kp EQUAL         &kp N                  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LS(LEFT_SHIFT)  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 TAB  &lt 1 SPACE  &kp RCTRL          &kp BACKSPACE     &mt RIGHT_SHIFT ENTER                             &lt 3 LS(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -104,8 +104,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &msc SCRL_UP    &trans           &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &mmv MOVE_DOWN  &trans           &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &msc SCRL_DOWN  &trans           &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans          &trans           &trans  &trans      &trans  &trans                                &trans
             >;
         };
