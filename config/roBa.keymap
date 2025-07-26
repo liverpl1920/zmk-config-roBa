@@ -34,7 +34,7 @@
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         left_bracket {
@@ -49,7 +49,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
         };
 
         grave_tirude {
