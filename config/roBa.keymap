@@ -61,6 +61,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <32 33>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
@@ -108,10 +113,10 @@
 
         ARROW_FUNCTION {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans                           &trans         &trans    &kp UP_ARROW  &trans   &trans
-&trans      &trans  &trans  &mkp MB1  &trans  &trans      &trans       &kp HOME       &kp LEFT  &kp RIGHT     &kp END  &trans
-&trans      &trans  &trans  &trans    &trans  &trans      &trans       &trans         &trans    &kp DOWN      &trans   &trans
-&trans      &trans  &trans  &trans    &trans  &trans      &kp LA(TAB)  &kp LA(ENTER)                                   &trans
+&kp ESCAPE  &trans  &trans  &trans    &trans                      &trans         &trans    &kp UP_ARROW  &trans   &trans
+&trans      &trans  &trans  &mkp MB1  &trans  &trans      &trans  &kp HOME       &kp LEFT  &kp RIGHT     &kp END  &trans
+&trans      &trans  &trans  &trans    &trans  &trans      &trans  &trans         &trans    &kp DOWN      &trans   &trans
+&trans      &trans  &trans  &trans    &trans  &trans      &trans  &kp RIGHT_WIN                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
