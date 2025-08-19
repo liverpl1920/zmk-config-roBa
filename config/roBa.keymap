@@ -51,6 +51,11 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <11 12>;
         };
+
+        layer_five {
+            bindings = <&lt 5 RSHFT>;
+            key-positions = <37 41>;
+        };
     };
 
     macros {
@@ -98,10 +103,10 @@
 
         ARROW_FUNCTION {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans                      &trans         &trans    &kp UP_ARROW  &trans   &trans
-&trans      &trans  &trans  &mkp MB1  &trans  &trans      &trans  &kp HOME       &kp LEFT  &kp RIGHT     &kp END  &trans
-&trans      &trans  &trans  &trans    &trans  &trans      &trans  &trans         &trans    &kp DOWN      &trans   &trans
-&trans      &trans  &trans  &trans    &trans  &trans      &trans  &kp RIGHT_WIN                                   &trans
+&trans      &trans          &msc SCRL_UP    &trans           &trans                             &trans  &trans    &mkp MB4  &trans    &trans
+&kp ESCAPE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans      &trans         &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
+&trans      &trans          &trans          &trans           &trans  &trans      &trans         &trans  &trans    &trans    &trans    &trans
+&trans      &trans          &trans          &trans           &trans  &trans      &kp RIGHT_WIN  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -118,10 +123,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans                      &trans    &trans    &trans    &trans    &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans          &kp UP_ARROW    &trans     &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans     &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
