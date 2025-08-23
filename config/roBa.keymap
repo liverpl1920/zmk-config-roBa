@@ -65,6 +65,27 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        hold_layer2_tap_leftClick: hold_layer2_tap_leftClick {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 2 &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+            label = "HOLD_LAYER2_TAP_LEFTCLICK";
+        };
+
+        hold_layer1_tap_middleClick: hold_layer1_tap_middleClick {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 1 &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+            label = "HOLD_LAYER1_TAP_MIDDLECLICK";
+        };
+
+        hold_ctrl_tap_rightClick: hold_ctrl_tap_rightClick {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LCTRL &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+            label = "HOLD_CTRL_TAP_RIGHTCLICK";
+        };
     };
 
     behaviors {
@@ -123,10 +144,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans    &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans                           &trans                                                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                           &trans                             &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                           &trans                             &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &hold_layer2_tap_leftClick LCLK  &hold_layer1_tap_middleClick MCLK  &hold_ctrl_tap_rightClick RCLK      &trans  &trans                          &trans
             >;
         };
 
